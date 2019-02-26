@@ -38,7 +38,7 @@ body:before {
 
 .wrapper {
   display: grid;
-  grid-template-rows: 100vh 100vh auto 100vh 100vh 10px;
+  grid-template-rows: 100vh 100vh auto 100vh 100vh 100vh;
 }
 
 .section {
@@ -57,9 +57,57 @@ body:before {
 
 .section_home {
   display:grid;
-  grid-template-rows: 50px 10px;
+  grid-template-rows: auto auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 2fr 2fr;
+  grid-template-areas: 
+    
+    "h2 . ."
+    "img . ."
+    "ul . .";
   
 }
+
+.section_home img {
+  border: 2px solid white ;
+  border-radius: 50%;
+  margin: 0px;
+  padding: 0px;
+  grid-area: img;
+}
+
+.section_home h2 {
+ grid-area: h2;
+  margin-bottom: 40px;
+ 
+}
+
+.section_home ul {
+  
+   grid-area: ul;
+  
+}
+.section_home li {
+  
+  padding: 5px;
+}
+
+.contact {
+ margin-left: 100px;
+}
+
+.contact li {
+ display: flex;
+ align-items: center;
+  color: #109496;
+  font-weight: 900;
+}
+
+.contact li i {padding-right: 5px;}
+
+
+
+
 
 .main-menu {
   background: #0bab9f;
@@ -272,7 +320,6 @@ body:before {
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-template-rows: 1fr 2fr;
-  border-top: 4px dashed #3c3f6a;
   grid-template-areas: 
     "h h" 
     "p .";
@@ -302,6 +349,8 @@ body:before {
   grid-template-areas: 
     "h h" 
     "ul .";
+  
+  height: calc(100vh + 150px);
 }
 
 .section_english-level h2 {
@@ -347,7 +396,31 @@ body:before {
   .section_skills {
  
   height: 1100px;
+  }
+  
+  .section_english-level {
+  
+   height: calc(100vh);
+  }
+  
+   .section_summary {
+  grid-template-areas: 
+    "h h" 
+    "p p";
 }
+  
+  .section_home {
+ 
+  grid-template-areas: 
+    "h2 h2 h2"
+    ". img ."
+    "ul . .";
+  }
+  
+  .section_home h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
   
 }
 
@@ -363,10 +436,63 @@ body:before {
   .section_skills {
  
   height: 1750px;
-}
+  }
   
   .section {
-  padding: 0px 50px;
+    padding: 0px 50px;
+  }
+  .section_english-level {
+  
+   height: calc(100vh);
+  }
+  
+  .section_home {
+ 
+  grid-template-areas: 
+    "h2 h2 h2"
+    ". img ."
+    "ul . .";
+  }
+  
+  .section_home h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .main-menu {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+  }
+  
+  .main-menu a {
+    padding: 5px 20px;
+    list-style: circle;
+    font-size: 0.8em;
+    text-align: center;
+  }
+
+  
+  .section_english-level {
+ 
+  grid-template-areas: 
+    "h h" 
+    "ul ul";
+}
+  
+  .section_education {
+  background-size: 40%;
+  background-position: right 90%; 
+  grid-template-areas: 
+    "h h" 
+    "p p";
+}
+  
+  
+  .section_summary {
+  grid-template-areas: 
+    "h h" 
+    "p p";
 }
   
 }
