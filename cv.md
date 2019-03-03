@@ -24,12 +24,10 @@ My goal is to become a FRONTEND-developer. Because I always liked digital techno
 
 * Adobe Illustrator
 
-## Code examples
-
-
 ## Education
 
-
+I graduated The Belarusian State University of Culture and Arts in 2015. After that, I completed an evening retraining at the Institute of Information Technologies BSUIR with a degree in "web design and computer graphics" in 2017</p>
+      
 ## Level of English
 
 * Elementary (International House)
