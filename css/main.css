@@ -61,12 +61,13 @@ body:before {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 2fr 2fr;
   grid-template-areas: 
-    
-    "h2 . ."
+    "h2 h2 h2"
     "img . ."
     "ul . .";
   
 }
+
+
 
 .section_home img {
   border: 2px solid white ;
@@ -78,8 +79,8 @@ body:before {
 
 .section_home h2 {
  grid-area: h2;
-  margin-bottom: 40px;
- 
+margin-bottom: 40px;
+ font-size: 25px;
 }
 
 .section_home ul {
@@ -105,9 +106,11 @@ body:before {
 
 .contact li i {padding-right: 5px;}
 
-
-
-
+.contact a {
+  color: #109496;
+  border-bottom: 2px dashed rgba(255, 255, 255, 0.48);
+  padding-bottom: 3px;
+}
 
 .main-menu {
   background: #0bab9f;
@@ -212,15 +215,14 @@ body:before {
 
 
 .skills {
+  max-width: 1024px;
   position: relative;
   margin: auto;
   margin-top: 50px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  
   column-gap: 70px;
   grid-row-gap: 40px;
-  
   z-index: 1000;
 }
 
@@ -382,6 +384,24 @@ body:before {
   background: #109496;
 }
 
+.examples {
+  margin-top: 40px;
+}
+
+.examples li {
+  list-style:disc;
+  margin-left: 20px;
+  
+  
+}
+
+.examples a {
+  display: block;
+  font-weight: bold;
+  padding: 5px;
+  border-bottom: 2px dashed rgba(255, 255, 255, 0.38);
+}
+
 
 
 @media screen and (max-width: 800px) {
@@ -413,12 +433,12 @@ body:before {
  
   grid-template-areas: 
     "h2 h2 h2"
-    ". img ."
+    "img . ."
     "ul . .";
   }
   
   .section_home h2 {
-    text-align: center;
+    font-size: 25px;
     margin-bottom: 20px;
   }
   
@@ -450,12 +470,12 @@ body:before {
  
   grid-template-areas: 
     "h2 h2 h2"
-    ". img ."
+    "img .  ."
     "ul . .";
   }
   
   .section_home h2 {
-    text-align: center;
+    
     margin-bottom: 20px;
   }
   
@@ -496,7 +516,3 @@ body:before {
 }
   
 }
-
-
-
-
