@@ -5,143 +5,119 @@
   <meta charset="UTF-8">
   <title>Document</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Michroma|Open+Sans:400,700" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-
 </head>
 
 <body>
-<menu class="main-menu">
-      <a href="#about">about</a>
-      <a href="#summary">summary</a>
-      <a href="#technology_stack">technology stack</a>
-      <a href="#code-examples">code examples</a>
-      <a href="#education">education</a>
-      <a href="#english-level">english level</a>
-    </menu>
+ 
+  <menu class="main-menu">
+    <a href="#about">about</a>
+    <a href="#summary">summary</a>
+    <a href="#technology_stack">technology stack</a>
+    <a href="#code-examples">code examples</a>
+    <a href="#education">education</a>
+    <a href="#english-level">english level</a>
+  </menu>
+  
   <div class="wrapper">
-    
-    
-      <section class="section section_home">
-      <a name="about"></a>
-      
-      <img src="./img/avatar.jpg" alt="" width="200">
-      
-      <h2>Olga Lazarevich</h2>
-      
+    <section class="section section_home">
+      <a class="select-section" name="about"></a>
+      <img class="section_avatar" src="./img/avatar.jpg" alt="" width="200">
+      <h2 class="section_title">Olga Lazarevich</h2>
       <ul>
-        
         <li>Location: <span>Minsk, Belarus</span></li>
         <li>Contacts:
           <ul class="contact">
-            <li><i class="fab fa-telegram-plane"></i>    <a href="https://t.me/olgalazarevich">olgalazarevich</a></li>
-            <li><i class="fas fa-at"></i>     <a href="mailto:helgalazarevich.gmail.com">helgalazarevich.gmail.com</a></li>
+            <li><i class="fab fa-telegram-plane"></i> <a href="https://t.me/olgalazarevich">olgalazarevich</a></li>
+            <li><i class="fas fa-at"></i> <a href="mailto:helgalazarevich.gmail.com">helgalazarevich.gmail.com</a></li>
           </ul>
-        
         </li>
-        
       </ul>
-      </section>
-
+    </section>
     
+    <section class="section section_summary" name="summary">
+      <a class="select-section" name="summary"></a>
+      <h2 class="section_title">summary</h2>
+      <p>
+        My goal is to become a FRONTEND-developer. Because I always liked digital technology. This profession allows to us not stand still. It is necessary to improve all the time. And I think that is very cool. Looking at my friends in this area, I admire them and think that I can learn this too. Like to learn something new. As a hobby, I also like drawing comics for myself and traveling <span>(you can see my illustrations on this template).</span>
+      </p>
+    </section>
 
-    <a name="summary">
-      <section class="section section_summary" name="summary">
-        <h2>summary</h2>
-        <p>
-          My goal is to become a FRONTEND-developer. Because I always liked digital technology. This profession allows to us not stand still. It is necessary to improve all the time. And I think that is very cool. Looking at my friends in this area, I admire them and think that I can learn this too. Like to learn something new. As a hobby, I also like drawing comics for myself and traveling.
-        </p>
-      </section>
-    </a>
+    <section class="section section_skills">
+      <a class="select-section" name="technology_stack"></a>
+      <h2 class="section_title">technology stack</h2>
+      <ul class="skills">
+        <li class="skills-li skills-js">
+          <div><i class="fab fa-js"></i>
+          </div>
+          <div>
+            <p>JavaScript</p>
+          </div>
+        </li>
+        <li class="skills-li skills-html5">
+          <div><i class="fab fa-html5"></i>
+          </div>
+          <div>
+            <p>HTML5</p>
+          </div>
+        </li>
+        <li class="skills-li skills-css3">
+          <div>
+            <i class="fab fa-css3-alt"></i>
+          </div>
+          <div>
+            <p>CSS3</p>
+          </div>
+        </li>
+        <li class="skills-li skills-git">
+          <div><i class="fab fa-git-square"></i></div>
+          <div>
+            <p>GIT</p>
+          </div>
+        </li>
+        <li class="skills-li skills-react">
+          <div><i class="fab fa-react"></i></div>
+          <div>
+            <p>REACT</p>
+          </div>
+        </li>
+        <li class="skills-li skills-adobeps">
+          <div><i class="fab fa-adobe "></i></div>
+          <div>
+            <p>Adobe Photoshop</p>
+          </div>
+        </li>
+        <li class="skills-li skills-adobei">
+          <div><i class="fab fa-adobe fa-adobe-i"></i></div>
+          <div>
+            <p>Adobe Illustrator</p>
+          </div>
+        </li>
+      </ul>
+    </section>
 
-    <a name="technology_stack">
-      <section class="section section_skills">
-        <h2>
-          technology stack
-        </h2>
-        <ul class="skills">
+    <section class="section section_code-examples">
+      <a class="select-section" name="code-examples"> </a>
+      <h2 class="section_title">code examples</h2>
 
-          <li class="skills-li skills-js">
-            <div><i class="fab fa-js"></i>
-            </div>
-            <div>
-              <p>JavaScript</p>
-            </div>
-          </li>
+      <ul class="examples">
+        <li><a href="https://github.com/OlgaLazarevich/ghosthost"><i class="fab fa-github"></i> GHOSTHOST | HTML & CSS </a> </li>
+        <li><a href="https://github.com/OlgaLazarevich/Js-sort-metods/blob/master/index.js"><i class="fab fa-github"></i> BubleSort | JS </a></li>
+      </ul>
+    </section>
 
-          <li class="skills-li skills-html5">
-            <div><i class="fab fa-html5"></i>
-            </div>
-            <div>
-              <p>HTML5</p>
-            </div>
-          </li>
-          <li class="skills-li skills-css3">
-            <div>
-              <i class="fab fa-css3-alt"></i>
-            </div>
-            <div>
-              <p>CSS3</p>
-            </div>
-          </li>
-          <li class="skills-li skills-git">
-            <div><i class="fab fa-git-square"></i></div>
-            <div>
-              <p>GIT</p>
-            </div>
-          </li>
-          <li class="skills-li skills-react">
-            <div><i class="fab fa-react"></i></div>
-            <div>
-              <p>REACT</p>
-            </div>
-          </li>
-          <li class="skills-li skills-adobeps">
-            <div><i class="fab fa-adobe "></i></div>
-            <div>
-              <p>Adobe Photoshop</p>
-            </div>
-          </li>
-          <li class="skills-li skills-adobei">
-            <div><i class="fab fa-adobe fa-adobe-i"></i></div>
-            <div>
-              <p>Adobe Illustrator</p>
-            </div>
-          </li>
-        </ul>
-      </section>
-    </a>
-
-    <a name="code-examples">
-      <section class="section section_code-examples">
-        <h2>
-          code examples
-        </h2>
-        
-        <ul class="examples">
-          <li><a href="https://github.com/OlgaLazarevich/ghosthost">GHOSTHOST | HTML & CSS</a></li>
-          <li><a href="https://github.com/OlgaLazarevich/Js-sort-metods/blob/master/index.js">BubleSort | JS</a></li>
-        </ul>
-        
-        
-      </section>
-    </a>
-
-    <a name="education">
-      <section class="section section_education">
-        <h2>
-          education
-        </h2>
-        <p>I graduated The Belarusian State University of Culture and Arts in 2015. After that, I completed an evening retraining at the Institute of Information Technologies BSUIR with a degree in "web design and computer graphics" in 2017</p>
-      </section>
-    </a>
+    <section class="section section_education">
+      <a class="select-section" name="education"> </a>
+      <h2 class="section_title">education</h2>
+      <p>I graduated The Belarusian State University of Culture and Arts in 2015. After that, I completed an evening retraining at the Institute of Information Technologies BSUIR with a degree in "web design and computer graphics" in 2017</p>
+    </section>
 
     <a name="english-level">
       <section class="section section_english-level">
-        <h2>
-          english level
-        </h2>
+        <h2 class="section_title">english level</h2>
         <ul>
           <li> <span>Elementary</span> (International House)</li>
           <li><span>Pre-Intermediate & Intermediate</span> (Minsk State Linguistic University)</li>
@@ -149,7 +125,9 @@
       </section>
     </a>
   </div>
+  
   <script src="js/index.js"></script>
+  
 </body>
 
 </html>
